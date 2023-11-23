@@ -12,7 +12,8 @@ export function configAuthentication(registryUrl: string, alwaysAuth: string) {
   if (!registryUrl.endsWith('/')) {
     registryUrl += '/';
   }
-
+  // eslint-disable-next-line
+  console.log('try a code chnage');
   writeRegistryToFile(registryUrl, npmrc, alwaysAuth);
 }
 
