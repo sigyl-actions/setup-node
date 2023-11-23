@@ -12,7 +12,7 @@ export function configAuthentication(registryUrl: string, alwaysAuth: string) {
   if (!registryUrl.endsWith('/')) {
     registryUrl += '/';
   }
-
+  console.log('try a code chnage');
   writeRegistryToFile(registryUrl, npmrc, alwaysAuth);
 }
 
